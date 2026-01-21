@@ -51,7 +51,7 @@ export default function DiceRoller() {
   }}
 >
 
-      <div className="bg-zinc-950 border-4 border-cyan-400 rounded-2xl p-4 shadow-[0_0_30px_#00eaff]">
+      <div className="bg-transparent border-4 border-cyan-400 rounded-2xl p-4 shadow-[0_0_30px_#00eaff]">
         <h1 className="text-center text-2xl tracking-widest text-cyan-300 mb-4">
           {results ? "RESULTADOS" : "ROLADOR DE DADOS"}
         </h1>
@@ -65,13 +65,13 @@ export default function DiceRoller() {
                 min={1}
                 value={count}
                 onChange={(e) => setCount(Number(e.target.value))}
-                className="w-16 bg-black/60 border-2 border-cyan-400 rounded px-2 py-1 text-center"
+                className="w-16 bg-transparent border-2 border-cyan-400 rounded px-2 py-1 text-center"
               />
 
               <select
                 value={type}
                 onChange={(e) => setType(e.target.value)}
-                className="bg-black/60 border-2 border-cyan-400 rounded px-2 py-1"
+                className="bg-transparent border-2 border-cyan-400 rounded px-2 py-1"
               >
                 <option value="d4">d4</option>
                 <option value="d12">d12</option>
@@ -88,7 +88,7 @@ export default function DiceRoller() {
                     min={2}
                     value={customSides}
                     onChange={(e) => setCustomSides(Number(e.target.value))}
-                    className="w-16 bg-black/60 border-2 border-cyan-400 rounded px-2 py-1 text-center"
+                    className="w-16 bg-transparent/60 border-2 border-cyan-400 rounded px-2 py-1 text-center"
                   />
                 </div>
               )}
