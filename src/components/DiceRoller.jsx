@@ -35,7 +35,8 @@ export default function DiceRoller() {
   
   <div
     className="
-      w-[450px]
+      w-full
+      h-full
       origin-top
       scale-75
       sm:scale-90
